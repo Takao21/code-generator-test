@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Lazy Coder Shifu</title>
+  </head>
+  <body>
+    <label for="postTitle">Post Title:</label>
+    <input id="postTitle" type="text" name="postTitle" value="">*Example: Vintage Blouse | Fancy Clothing*
+    <hr>
+    <label for="imageURL">First Image's URL:</label>
+    <input id="demoImg" type="text" name="imageURL" value="">*Copy Image Address from FB Post*
+    <hr>
+    <label for="postCategory">Keywords and Category:</label>
+    <input id="postCategory" type="text" name="postCategory" value="" placeholder="lower case with spaces for each category">*Example: clothing vintage colors croptop*
+    <hr>
+    <label for="postIndex">Post Index:</label>
+    <input id="postIndex" type="text" name="postIndex" value="" min="1">*Example: post5*
+    <hr>
+    <label for="variantPrice">Variants & Prices</label>
+    <input id="variantPrice" type="text" name="variantPrice" value="">*Example: 6 variants(MMK 9000)*
+    <hr><hr>
+    <h1>Details</h1>
+    <label for="itemDesc">Item Description:</label><br>
+    <input id="itemDesc" type="text" name="itemDesc" value="" placeholder="Detailed description.">
+    <hr>
+    <label for="detailedPrice">Detailed Price Tag:</label>
+    <input id="detailedPrice" type="number" name="detailedPrice" value=""> MMK per <input id="detailedBundle" type="text" name="detailedPrice" value="" placeholder="bundle/pc/card etc">
+    <hr>
+    <label for="imageCount">Number of Images:</label>
+    <input id="imageCount" type="number" name="imageCount" value="" min="0">
+    <button id="goBtn" type="button" onclick="expandUpload()" name="arrayShow">Go!</button>
+    <hr>
+    <h2>Paste each image URL below.</h2>
+    <div class="uploadArea">
+
+    </div>
+    <button id="finalizeBtn" type="button" onclick="getCode()" name="finalize">Get Code</button>
+    <div class="result">
+
+    </div>
+    <script type="text/javascript" src="operator.js"></script>
+  </body>
+
+</html>
